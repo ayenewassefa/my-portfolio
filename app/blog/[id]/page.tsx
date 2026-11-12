@@ -1,3 +1,6 @@
+export const instant = false;
+
+export default async function BlogPost({ params }: { params: Promise<{ id: string }> }) {
 export default async function BlogPost({ params }: { params: { id: string } }) {
   const resolvedParams = await params;
   const postId = resolvedParams.id;
